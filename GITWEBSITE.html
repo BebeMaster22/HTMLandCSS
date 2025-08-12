@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML and CSS</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <style>
+    body{
+  padding: 25px;
+}
+.title {
+	color: #92aad1;
+}
+.body{width:80vw;padding:20px;margin:auto;background-color:#8493E0;border-radius:10px}
+
+.frame1{display:block;width:100%;max-width:100%;height:auto;}
+
+.video1{display:block;width:100%;max-width:100%;height:auto;}
+
+#audio{text-align:center;}
+
+#image1{text-align:center;}
+
+hr{height:3px;color:white;background-color:white;border-radius:5px;}
+
+#label1{display:block;}
+#label2{display:block;}
+#label3{display:block;}
+#button1{display:block;}
+#button2{display:block;}
+#form1{margin:10px;}
+table,th,td{border-style:solid;border-color:white;border-radius:5px;}
+  </style>
+  <body>
+      <h1 class="title">HTML and CSS</h1>
+      <footer>By Damian</footer>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+      <div class="body">
+        <nav>
+<p>Primary Contents</p>
+ <ul>
+ <li><a href="#images">Images</a></li>
+  <li><a href="#figures">Figure Element</a></li>
+   <li><a href="#HREF">Anchor Element</a></li>
+    <li><a href="#NAV">Section and Nav Elements</a></li>
+     <li><a href="#list">List Elements</a></li>
+      <li><a href="#audio">Audio and Video Elements</a></li>
+       <li><a href="#frame">Iframe Elements</a></li>
+        <li><a href="#style">Style Elements</a></li>
+         <li><a href="#class">Class Attribute</a></li>
+          <li><a href="#quote">Quote Elements</a></li>
+           <li><a href="#head">Head, Meta, Body, and HTML elements</a></li>
+            <li><a href="#form">Form Elements</a></li>
+             <li><a href="#button">Button Elements</a></li>
+              <li><a href="#table">Table Elements</a></li>
+ </ul>
+</nav>
+<hr id="hr1">
+
+<h2>Real Quick:</h2>
+
+<p>This isn't a professional guide. You could use it as one to just get the basics down. However, I, a high   schooler, wrote this guide simply as a way for me to practice everything I've learnt on HTML (And I'm still learning) as well as a place to keep examples of code and their explanations in case I forget something. So, a way of putting this HTML is that it's my notebook. And as such, I wouldn't advise anyone to learn from my notebook if they're serious about learning HTML. Also, I'm learning HTML on 'freecodecamp' which I highly recommend. As a result, a lot of my information may draw some parallels from their own course. Plagiarism isn't my intention, and as said before, these are just my notes per se.</p>
+<h2>Basic Functions</h2>
+
+      <p>The basic functions of html include the < h1>< / h1> and < p>< / p> elements. These elements allow you 
+      to insert text of different categories. For example, the p element denotes a paragraph whereas h1 denotes
+      the title. The h1 element also has multiple counterparts which range from h1-h7 in order of decreasing
+      importance within a html. So, h1 would be the most important, and as such would be used in the title.</p>
+
+     
+      <section id="images">
+
+      <h2>Images</h2>
+
+<p>Images can be put into html using the img element in the following syntax: < img src="image source"/>
+In the syntax, img refers to image and src refers to image source. Said source can take the form of a url 
+or image address. Additionally, the alt attribute can be used to add an alternate text associated with the image.For example, < img src="Image source" alt="A cool image" width="" height=""/> in this syntax, the alt attribute allows for a shortdescription, in this case 'a cool image and the width and height attributes determine     the height and width..'</p>
+
+      <figure id="image1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkzlqJxXCYuzyn-LPFUDmFGR0ujd-HM8Sxnw&s" width="350" height="250" margin="auto"><figcaption>A cool elephant(this is a figcaption)</figcaption>
+      </figure>
+</section>
+<section id="figures">
+
+<h2>Figures and Figcaptions</h2>
+
+<p>Figures are ways of seperating certain elements to add additional attributes as seen with the figcaption above. tomake anything a figure, simply rap the figure syntax < figure>< / figure> around it. To add a figcaption, simply use thefigcaption syntax, >< figcaption>< / figcaption></p>
+
+</section>
+<section id="HREF">
+
+<h2>href Element</h2>
+
+<p>The href elements is essentially the element that allows <a href="https://en.wikipedia.org/wiki/A_Canticle_for_Leibowitz">hyperlinks</a> to exist. 
+To use the href element, use the syntax < a href="destination link">word< / a></p>
+
+</section>
+<section id="head">
+
+<h2>Head, Body, HTML, and Meta elements</h2>
+
+<p>The head, body, html, and meta elements are like the categories of code within your html. The head element should containyour file title in the syntax < title>< / title>. Your body element should wrap all the things that will be shown to the users such as your < p> and < h1> elements. The html element tells a browser how to use your html. It should include the language,< html lang="en">. While your meta element should include all the metadata of the html.</p>
+
+</section>
+<h2>Comments</h2>
+
+<p>While coding, yourself and other developers can leave comments in the code which will not be seen when the html is run. They come in the following syntax:< !-- HTML Comment -->.
+
+<h2>Void Elements</h2>
+
+<p>Void elements do not have any content and instead only have a start tag. Examples include 'img' and 'meta' elements.
+
+<section id="NAV">
+
+<h2>Section and Nav elements</h2>
+
+<p>You can use the section element < section>< / section> to section and divide your html, similar to pages or the figure element. Additionally, the nav element is used to section a part of your html where all of the navigation links are located. You can link a section to your nav by creating an id such as "#Section-and-nav-elements" using the anchor element. Then, in any section, you may set the id to this which will allow clicking on the link to lead you to the desired section.</p>
+
+</section>
+
+<section id="list">
+
+<h2>Lists</h2>
+
+<p>Lists can be used to, well list things. They come in unordered and ordered lists in the respective syntax: < ul>< /ul>, < ol>< / ol>This creates the list, however, within the opening and closing arrows of the element, you need to include < li>whatever< / li> to add things to your list.</p>
+
+<ul>
+  <li>This</li>
+   <li>is</li>
+    <li>unordered</li>
+     <li>list</li>
+</ul>
+
+<ol>
+  <li>This</li>
+   <li>is</li>
+    <li>ordered</li>
+     <li>list</li>
+</ol>
+
+</section>
+
+<h2>Misc elements: em, strong, and footer</h2>
+
+<p>The em and strong elements are essentially elements that change the words to <em>italics</em> or <strong>bold</strong>. They come in the respective syntax: < em>< / em>, < strong>< / strong>. Additionally, we have the footer element, < footer>< / footer> which obviouslycreates a footer for various information.</p>
+
+<footer>heres a footer</footer>
+
+<section id="audio">
+
+<h2>Audio and Video elements</h2>
+
+<p>HTML has the ability to display audio and video using the < audio src=""></ audio> and < video src=""></ video> elements. These elements allow you to display or upload videos and audio alike in varying source types such as mp3, wav, and ogg. However, using the audio and video elements alone won't allow your selected audio or video to be displayed, instead you must use the 'controls' attribute in the following
+syntax: < audio src="bebe.mp3" controls></ audio>. The same applies for video format. Additionally, you can use other attributes such as mute, loop, width, and poster which mute the content, loop the content, adjust the content'suchwidth on the HTML, and provide a loading image respectively. Specifically, in order to attach a file to an audio or video element, you must have the same file in the same directory as the html, and from there you may simply type in the file name. However, this is not the only way. you may also type in the entire file name which is found under the file properties>security and from there you can find the exact file name and location which is all thats neeeded for the html to function. These two types of sources are called relative and absolute paths respectively. As for syntax, the following syntax will be sufficient:< audio controls> < source src="file location/name"> followed by audio closing brackets </p>
+
+<audio controls style={text-align:center;} src="C:\Users\damia\Downloads\818282__xantherock__synth-ep-loop.wav" type="audio/wav">
+</audio>
+
+<figure>
+ <video width="320" height="240" loop controls class="video1">
+  <source src="C:\Users\damia\Downloads\2835528-hd_1920_1080_25fps.mp4">
+   </video><figcaption>This video and audio may not appear to you on your browser</figcaption>
+</figure>
+
+<p>As for the video syntax: < video width="" height="" controls> < source src=""> < / video> obviously, you can insert further attributes as children of the video element. Additionally, in both video and audio syntax, it isnt necessary to nest the source in a seperate 'source' attribute as seen here. Instead you can simply put the source using the src="" syntax directly following the video or audio element as such: < audio src=""></p>
+
+</section>
+<section id="frame">
+
+<h2>Iframes</h2>
+
+<p>Iframes are essentially frames that link to external sources such as youtube. These frames cannot be styled by css or alike. The syntax for inserting iframes is: < iframe width="" height="" src=""></ iframe> however, simply linking the video url will not allow youtube to be played in the iframe. Instead, you must use the following format: https://www.youtube.com/embed/VIDEO_ID where the video id can be found in the url directly after the 'v='. Below is an iframe.</p>
+
+<iframe class="frame1" src="https://www.youtube.com/embed/uD4izuDMUQA" allowfullscreen>
+</iframe>
+
+</section>
+<section id="style">
+
+<h2>Style attribute</h2>
+
+<p class="solid pink">The style attribute is used to define style information within a document and how a browser should render a document. You can apply a style to the whole document by inserting it in the head, however, to apply it to specific elements, you must utilise the class attribute which will be discussed further in the following paragraph. Simple applications of the style attribute include colour in the following syntax: style="color:blue" or < style> h1{color:red} </ style>As for border simply swap out colour for border and specify the parameters. For example, style="border: 1px black", this will make the border 1 pixel and black in colour. </p>
+
+</section>
+
+<section id="class">
+
+<h2>Class attribute</h2>
+
+<p>The class attribute is used to specify a class within the style sheet. For example, I could create a style element p.solid(border-style:solid) and could later apply it in specific elements by referring to it as such: < p class="solid"> to create a class, start within a style element and begin by naming the style class after a full stop. This is the name that you will refer to the class as. For example I might name my font colour class as '.blue'. Following this, you must specify the parameters of the class as right now, all the browser knows is the name of the class. To do this, you must enclose the parameters in {} and then specify the type of parameter for example, {colour:blue;}. The style must be finished by a semicolon, afterwhich you can add more styles. For example, {border-style:dotted;colour:blue;} as such, the style in this case, 'blue' will result in the text or whatever being surrounded by a black dotted border and blue in colour. However, in this case, the border and text will be blue, as such, it is better to be more specific and seperate styles. So in this case, I should have made a seperate style for the font colour and applied it seperately. This works since elements can have multiple classes assigned to it and different elements can share classes. To do this, simply seperate two style classes by space. Some types of style class include: border-style, color, backround-color, font-size, and padding. Here is a full example of the correct syntax. In your style: < style> .solid{ border-style:solid;} </ style> < p class = "solid"></ p>. This syntax will affect the p element by surrounding it with a solid border.</p>
+
+</section>
+
+<h2>Target Attribute</h2>
+
+<p>The target attribute allows you to determine how and where a browser will open a link. It is very common in 'a href' hyperlink syntaxes in which you can determine if the link opens in the current tab, seperate tab/window, or in an inframe within the html. These are the three most common tags associated with the target attribute and are as follows in respective order: '_self','_blank','_parent', and '_top'. You might have noticed that '_top' is a new one. '_top' is essentially '_parent' but the parent of the parent so to speak. In order to apply this in your code, use the following syntax: < a href="" target="_blank">words followed by the closing tag. </p>
+
+<h2>What do dashes, single dots, and double dots mean in paths?</h2>
+
+<p>The dashes, single dots, and double dots seen in paths are syntaxes for paths which help organise different paths, directories and whatnot into neat categories. First and foremost, the slash which can come in the form of a forward or backward slash indicates seperations between folders or file names. For example, bebe_files/ directs you to a directory with that name while bebe/files directs you to a directory called files within a directory called bebe. Second of all, a single dot directs you to the current directory while two dots directs you to the parent directory. </p>
+
+<h2>Link States</h2>
+
+<p>Links change states. For example, when you click on a link, it changes colour as it has changed states. There are five distinct states a link could be in. First is the default state, ':link' which displays a link which has not been clicked or visited yet. Second is the ':visited' state, which occurs when the user has clicked or visited a link. By default, the link will turn purple when the state becomes ':visited'. Third is the ':hover' state, which occurs when a user is hovering their cursor over the link. Fourth is ':focus', which occurs when a user focuses on a link. And lastly is ':active', which occurs when the link is being activated by a user. When using these states to style links, you must follow a particular order when writing them in CSS. The order is as follows.</p>
+
+<ol>
+ <li>link</li>
+  <li>visited</li>
+   <li>hover</li>
+    <li>focus</li>
+     <li>active</li>
+</ol>
+
+<h2>Script Element</h2>
+
+<p>The script element is used to embed executable code, however, this can make your html very messy, and as such it is advised to link an external javascript file for your executable code.</p>
+
+<h2>Link Element</h2>
+
+<p>The link element is used to link external resources such as the previously described javascript files or css stylesheets. The syntax for link is as follows: < link rel="stylesheet" href="file location"/> The rel attribute describes the relationship between the resource and the HTML document while the href attribute is used to specify the location of the resource.</p>
+
+<h2>Description Lists</h2>
+
+<p>Description lists are made to provide descriptions to a certain term within a list. There are three elements associated with a description list. First is the < dl>< / dl> element which wraps all of the content of your list similar to the 'ol' and 'ul' elements of unordered and ordered lists. Followingly, you have the < dd>< / dd> element which provides a term in the list. Then, the < dt>< / dt> element directly provides a description for whatever was written in the 'dd' element. Hence, this list is particularly useful for defining things like in dictionaries or recipes.</p>
+
+<dl>
+ <dt>Here is a 'dt' element</dt>
+  <dd>And here is the corresponding 'dd' element.</dd>
+
+<dt>Bebe</dt>
+ <dd>Bebe is a stuffed elephant from Ikea.</dd>
+  </dl>
+
+<section id="quote">
+
+<h2>Blockquotes, Inline Quotes, and Citation</h2>
+
+<p>The 'blockquote' element and 'q' (Inline quote) element both allow you to quote something. It visually differs from surrounding text by providing an indentation to the quote. Meanwhile, the 'cite' element allows you to cite the quote either by URL or simply title. The difference however, between blockquoting and Inline quoting is that they are simply the same visually, the only difference is the information it provides behind the scenes. Inline quotes are made for smaller quotations a few sentences more or less, while blockquotes can be up to a paragraph long. As such, the purpose of these two elements is for the sake of semantics as it helps the browser understand what you are trying to convey within the html as it doesn't gather information explicitly by reading the content of your elements, rather, the element themselves to get a sense of what you are trying to convey. The syntax for these elements is simple. For blockquotes and inline quotes simply nest the quote in your desired element, < blockquote> or < q>. However, for citation, you should put the element outside of the quote if you wish it to be visible. This is better for referencing titles. However, you can also insert the cite element within the opening brackets of a blockquote or inline quote element which will allow you to cite the URL behind the scenes.</p>
+
+</section>
+
+<p>
+ <q>Now I am become death, the destroyer of worlds.</q>
+  <cite>-J Rober Oppenheimer</cite>
+</p>
+
+<h2>Abbreviation Element</h2>
+
+<p>The abbreviation element's purpose is obvious, however, its not that straight-forward as this element is semantic. Hence, visually, it has no effect. However, behind the scenes it allows browsers to understand that the word is not a word but rather an acronym. Additionally, you can incorporate the title element in the opening brackets of your abbreviation element, < abbr title=""> which will allow you to provide the meaning of the acronym sometimes appearing as a tooltip or simply visually there with certain stylistic changes that vary from browser to browser. In the case of the abbreviation below, it becomes underlined and when hovering your cursor over it, a tooltip appears with the definition stated alongside the title element.</p>
+
+<abbr title="So you're funny man">syfm</abbr>
+
+<h2>Address Element</h2>
+
+<p>Similar to the div element which groups different parts of a html, the address element groups specific details such as phone-numbers, addresses, and emails together using other various elements such as the 'br', 'tel+', and 'mailto' elements which format address, phone-number, and email respectively. The syntax for these are simply < br>< / br> for your br element, and for your phone number and email element, simply input 'tel:+' and 'mailto:' after your a href element like so: < a href="tel:+041234566789" >< / a> and < a href="mailto:abc@gmail.com"> < / a>.</p>
+
+<address>
+ <br>67 Street, New York, Antarctica</br>
+  <p><a href="tel:+041234567891">+04 123 456 7891</a></p>
+   <p><a href="mailto:JaneDoe@outlook.com">JaneDoe@outlook.com</a></p>
+</address>
+
+<h2>Superscript and Subscript</h2>
+
+<p>The superscript and subscript elements allow you to change the position and size of a letter. In superscript, the letter is smaller and higher on the line than usual. For subscript, the letter is smaller but lower on the line than usual. These elements are used for mathematical or chemical equations in which you can show exponents or the number of an element. Their syntax is < sup> and < sub>.</p>
+
+<p>2<sup>2</sup></p>
+<p>H<sub>2</sub>O</p>
+
+<section id="form">
+<h2>Form Elements</h2>
+
+<p>The form element allows you to make a form in which inputs can be made and said inputs can be received and submitted. However, other attributes and elements are required to complete the form element. First of all, the action attribute following 'form' within it's closing brackets specifies where the inputs of the form will be set, typically a url. The syntax is as follows: < form action="">< / form>. Additionally, you have the input element which as in the name, allows for inputs to be made. They are void elements which can be used in conjunction with the type attribute which determines the type of data that is required of the input. However, this is the input only, and it doesn't contain the instructions of it. In this case you would use the 'label' element rather than a paragraph element. Here is the syntax of the label element: < form action="">< label>DOB:< input type="">< / label>< / form>. An alternative to the label element is the 'for' attribute which is much more specfic in its requirements. It is used in conjunction with the label element in which the input is identified via ID. As such, you must also include the id attribute in your input element. Finally, you can include a placeholder within the input element as an attribute as well as the 'method' attribute in your opening tags which defines how the form results are sent. The most common method types are 'GET' and 'POST'. Here is the finalised syntax: < form action="">< label for="DOB">DOB< / label>< input type="date-of-birth" id="DOB" placeholder="Ex.5/4/4">< / form>.</p>
+
+<form action="/submit" id="form1">
+ <label id="label1">Full Name:
+  <input type="text" placeholder="John Doe">
+   </label>
+    <label for="DOB" id="label2"> Date of Birth:
+     <input type="text" id="DOB" placeholder="XX/XX/XXXX">
+      </label>
+       <label for="colour" id="label3">Favourite Colour:
+        <input focused type="text" id="colour" placeholder="red">
+         </label>
+          <label for="affirm" id="label3">Do you like this HTML so far?
+           <input type="text" id="affirm" placeholder="YESSSSS!!!">
+            </label>
+             <button type="submit" id="button1">Submit Answers(doesn't work)</button>
+             <button type="reset" id="button2">Reset Form</button>
+</form>
+</section>
+<section id="button">
+<h2>Button Element</h2>
+<p>The button element allows you to have a button with a certain function within your html. The syntax is 'button' within your usual brackets and the wording that appears within the button, nested within your opening and closing brackets. Additionally, you can insert the type="" attribute to specify the function of the button. For example, you can change the type="submit" when using the button in a form. Furthermore, you can use the 'required', 'minlength', and 'maxlength' attributes to create a requirement and minimum or maximum character length for your forms. The complete syntax is: < form action="">< label>< input required type="email" name="email" placeholder="email" minlength="5" maxlength="40">< / label>< / form>.</p>
+</section>
+
+<section>
+<h2>Select and Input Button elements</h2>
+<p>The select element essentially acts as a drop down for options, of which you can select. Although we already covered buttons, theres more to it: Buttons can be customised by using the input element rather than the button element. This is because you can add the type attribute to the input element which can allow you to insert a checkbox, circular button, or your regular button. Here is the provided syntax for each: < select>< option>""< / option>< / select>. < input type="radio">, < input type="checkbox">.</p>
+
+<fieldset>
+<legend>
+<p>Do you like this HTML</p>
+<select>
+<option>Yes</option>
+<option>No</option>
+</select>
+<input type="checkbox" name="Yes/no" id="yes-no">
+<input type="radio" name="Yes/no" id="no-yes"
+</legend>
+</fieldset>
+
+
+<p>Above you can see the select element, checkbox input type, and radio input type respectively. However, I also used the fieldset and legend elements to add this little border here for stylistic reasons. The fieldset performs similarly to divs, where you may use it to group contents of similar types. The legend element, as you can see, provides this box around whatever is in it. Both have normal syntax.</p>
+</section>
+<section id="table">
+<h2>Table Elements</h2>
+<p>Tables come with their own body, head, and footer elements. Each called, tbody, thead, and tfoot respectively. Within these elements you can nest further elements, tr, th, and td, which correspond to 'Table-Row', 'Table-Head', and 'Table-Data'. The syntax for a regular table is as follows: < table>< thead>< tr>< th>Title of Table< / th>< / tr>< / thead>< tbody>< tr>< th>title of row< / th>< td>Table content< / td>< / tr>< / table>. The table can be customised to have more columns by including more 'td' in a 'tr'. To make this tables more clear, you can add the scope attribute which has the possible values of 'row' and 'col', which specify whether the cell the attribute is in is a column or a row. Additionally, these tables to not come with the table outlines you are familiar with. Instead, you must use either CSS or the style element present in the head to style it. An example of styling would be: < style>table, th, tr, td{border-style:solid}< / style>.</p>
+<table>
+<thead>
+<tr>
+<th>Example Table (This is a th, nested in a tr, with is nested in a thead.)</th>
+</tr>
+</thead>
+<tbody>
+<tr><th>First Row</th><td>Hello</td></tr>
+<tr><th>Second Row</th><td>Friends</td></tr>
+<tr><th>Third Row</th><td>This</td></tr>
+<tr><th>Fourth Row</th><td>Is</td></tr>
+<tr><th>Fifth Row</th><td>A</td></tr>
+<tr><th>Sixth Row</th><td>Table</td></tr>
+</tbody>
+</table>
+
+<table>
+<tr>
+<th>Column 1</th>
+<th>Column 2</th>
+<th>Column 3</th>
+</tr>
+<tr>
+<td>R1C1</td>
+<td>R1C2</td>
+<td>R1C3</td>
+</tr>
+<tr>
+<td>However, each of these tables</td>
+<td>do not come with borders. You</td>
+<td>must add the borders in a style element</td>
+</tr>
+</table>
+
+</section>
+
+<section>
+<h2>What is ARIA?</h2>
+<p>ARIA stands for Accesible Rich Internet Applications which is designed to provide more semantic meaning and attributes to native html elements. This is done to increase accessibility in html. ARIA has a number of attributes which enhance certain native html elements. However, in the case of structure, you should stick with native html as ARIA provides extra steps that when done wrong, will make your html less accessible. As such, it is often easier and better to stick to native rather than implement ARIA controls. Some ARIA attributes include: 
+<dl>
+<dt>ARIA role attribute</dt>
+<dd>The ARIA role attribute allows you to assign a role which adds further semantic meaning as well as contributing to accessibility by providing further descriptions for those using text to voice.</dd>
+<dt>ARIA Label attribute</dt>
+<dd>Gives an element an accessible name which help assistive technology identify it.</dd>
+<dt></dt>
+<dd></dd>
+</dl>
+</p>
+
+</section>
+<hr>
+<section>
+<h2>CSS</h2>
+<h3>Basic Structure of CSS</h3>
+<p>The basic syntax of all CSS is made up of a selector and a declaration block. selector {property:value;} The selector is used to target various html elements that can be subjected to modification and styling which occurs in the declaration block {}. The property determines which feature is being styled e.g backround-color. The value is then the modifcation applied to the property. In this case it could be purple or white. After every property, you must have a colon, and after every value, you require a semicolon. </p>
+<h3>Selectors</h3>
+<p>There are different types of selectors. The type selector applies the value and property to a type of element. If you added a border to the table element, every table element would have a border. The next type is the ID selector where you apply the property and value to a certain ID. Every ID must start with a hashtag. Followingly, is the class selector which performs similarly to an ID, except instead of a preceding hashtag, you require a full stop. An ID and class can be applied as an attribute to any opening bracket.</p>
+<h3>Meta Viewport Element</h3>
+<p>The meta viewport element provides the browser with instructions on how to control the pages dimensions and scaling on different devices and screen sizes. The meta viewport is inserted in the head element. The syntax is as follows: < meta name="viewport" content="width=device-width, initial-scale1.0"> The wdith=device-width tells the browser to match the width of the page to the width of the screen. The initial-scale1.0 tells the browser to set the inital zoom level at 100% when the page is initially loaded.</p>
+<h3>Width and Height Elements</h3>
+<p>The width and height elements define the width and height of an element using measures of px, %, or viewport units(vw,vh). In order to insert a simple box with heigh and width elements, it is best to create a class and the class as an attribute to a div or section.</p>
+
+<h3>Combinators</h3>
+<p>Connectors are the characters which combine different elements to style as one. The first type of combinator is the descendent combinator. The descendent combinator is a space between two element selectors. It's function is to apply the style to the second element in the selector IF it is nested within the first element. Take this example: figure p {border:"";} in this case, the style will only apply to the p element under the condition that it is the child of a figure element. The descendent combinator requires a space between the first and second element. The next time of combinator is the child combinator, >. The function of the child combinator applies a style to the direct child of an element. The parent element precedes the greater than symbol while the direct child is after said symbol. Followingly, we have the 'next-sibling' combinator, +, which targets the next direct sibling of an element for stylising. Say we have a h1, h2, and h3 element in the same div element. If I wanted to target the h3 element for stylisation using the sibling combinator, I'd have to precede the + sign with the h2 element as the h3 element is the direct sibling of the h2 element. As a result, the style would only apply to the h3 element. Finally, we have the 'subsequent-sibling' combinator, ~, which works similarly to the next-sibling combinator. Except, the subsequent sibling combinator targets all subsequent siblings of a chosen element of a chosen element. Say I had a h2 element followed by three h3 elements and two h2 elements. If I wanted to target all p elements following the h2 element, all I would have to do is precede the ~ with the h2 element, and after the ~ a p element in the following syntax: h2~p{"":"";}. Note that this will only occur if they are siblings nested within the same elements. Additionally, note that putting this style in the header would apply to all instances which match the requisites of the style. As such, it is better to create a class or ID for this style which can be applied individually. This can work by applying an ID or class to one of the elements involved in the combinator. For example, in the opening brackets of my chosen h2 element, I could make the class="target". Then, within my style element I could add this class in the following syntax: h2.target~p{"":"";}. As a result, the style will only apply to the h2 element under the class of '.target'.</p>
+</section>
+
+<section>
+<h3>Inline Block Elements</h3>
+<p>There are three primary display behaviours when it comes to elements. Inline, block, and inline-block. Block elements take up the full width it can. They start on a new line and are adjustable. For inline elements, they flow around the surrounding elements and only take up the necessary amount of space, they are not adjustable however. On the other hand, Inline-Block-Elements are inline elements, just with the ability to adjust their parameters. The syntax is normal when it comes to styling, however, you must specify the display in the value and property block as such: { display:inline-block}. Additionally, it is recommended to use the span element which is essentially a container of the same respect as div, just that it is geared towards styling.</p>
+</section>
+<section>
+<h3>Margin and Padding</h3>
+<p>The margin element allows you to add a margin to a certain side or all sides of an element. Of course you can add it inline as an attribute, however it is best to simply add it to every element as a style. The different variations of margin is as follows: Margin, margin-left,margin-right,margin-top, and margin-bottom. The margin element on its own adds a margin of a specified size to all sides of the element. While the other margin elements are added to certain sides. Take this syntax: { margin: 10px 40px} the margin would add 10px to the top and bottom and 40px to the left and right. If we were to add a third value, the 10px would be added to the top, 40px to the left and right, but the new value would be added to the bottom. Adding a fourth value would change the individual sizes for each margin side in the order: top,right,bottom,left. As for padding, the element variations are the same as the margin element. </p>
+</section>
+<section>
+<h2>Gradients</h2>
+<p>Gradients are used in CSS to make smooth transitions between different colours. There are two types of CSS gradients: Linear, and radial gradient. Linear gradients transition colours across a straight line. The direction and colours are defined within the syntax. The syntax is as follows: selector {background:linear-gradient(to right, blue, green);} In this syntax, the linear gradient value is used. Within its brackets contains the parameters for the gradient. The direction is specified first, followed by the colours. In this case, yellow would blend into red from left to right. On the other hand, radial gradients are gradients that stem from one point. The syntax is as follows: selector {background:radial-gradient(circle closest-side at center, yellow, skyblue);} In this case, the first term within the brackets, circle, determines the shape of the gradient, then, the second term 'closest side' determines the gradient's ending size, in this case the closest side. Followingly, the third term 'at center' determines where the gradient will begin, in this case, at the center. And finally, you have the gradient colours.</p>
+</section>
+
+
+
+
+ </div>
+  </body>
+</html>
